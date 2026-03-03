@@ -6,7 +6,7 @@ puts [1,"a","2",2,2,2]
 
 #Imprime a lista na mesma linha atraves da interpolação
 nomes = ["inacio","joao","roberto"]
-puts "a #{nomes}"
+puts "a #{nomes}" #a ["inacio","joao","roberto"]
 
 #Indice 
 nomes2 = ["inacio","joao", "robertp"]
@@ -31,3 +31,24 @@ puts exemplo[2][1] #5
 nomes3 = "Rafael Roberto Lucas"
 lista_de_nomes = nomes3.split(" ") #["Rafael", "Roberto", "Lucas"]
 puts lista_de_nomes[2] #Lucas
+
+#Adicionando elemento
+a = [] #Array vazio
+puts a[0]#nil
+a[0] = 10
+puts "#{a}"#10
+
+#Atribuindo novo valor
+a[1] = 20
+a[2] = 30
+puts "#{a}" #[10,20,30]
+a[0] = 40
+puts "#{a}" #40,20,30
+
+#outra forma de adicionar
+b = []
+b << 10
+b << 20
+b << 30
+#Sempre adiciona no final do Array
+puts "#{b}"#[10, 20, 30]
